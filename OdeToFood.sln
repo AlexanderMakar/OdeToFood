@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood", "OdeToFood\OdeToFood.csproj", "{C0EE95C7-99F7-47E6-82A5-AF8AE5E8F71D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Core", "OdeToFood.Core\OdeToFood.Core.csproj", "{9BE3BAF8-B518-4DA4-AB92-A4AB60400772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OdeToFood.Data", "OdeToFood.Data\OdeToFood.Data.csproj", "{12AB5A4D-3050-4C3C-9A75-8FBC6F31FD7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C0EE95C7-99F7-47E6-82A5-AF8AE5E8F71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0EE95C7-99F7-47E6-82A5-AF8AE5E8F71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0EE95C7-99F7-47E6-82A5-AF8AE5E8F71D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BE3BAF8-B518-4DA4-AB92-A4AB60400772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BE3BAF8-B518-4DA4-AB92-A4AB60400772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BE3BAF8-B518-4DA4-AB92-A4AB60400772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BE3BAF8-B518-4DA4-AB92-A4AB60400772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12AB5A4D-3050-4C3C-9A75-8FBC6F31FD7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12AB5A4D-3050-4C3C-9A75-8FBC6F31FD7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12AB5A4D-3050-4C3C-9A75-8FBC6F31FD7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12AB5A4D-3050-4C3C-9A75-8FBC6F31FD7E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
