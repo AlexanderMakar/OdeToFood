@@ -13,7 +13,11 @@ namespace OdeToFood.Pages.Restaurants
     {
         private readonly IRestaurantData restaurantData;
 
+        [TempData]
+        public string Message { get; set; }
+
         public Restaurant Restaurant { get; set; }
+
         public DetailModel(IRestaurantData restaurantData)
         {
             this.restaurantData = restaurantData;
@@ -22,7 +26,7 @@ namespace OdeToFood.Pages.Restaurants
         {
             Restaurant = restaurantData.GetById(restaurantId);
 
-            if(Restaurant == null)
+            if (Restaurant == null)
             {
                 return RedirectToPage("./NotFound");
             }
