@@ -39,9 +39,13 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="border-top modal-footer">
         <div class="container">
-            &copy; 2021 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            <vc:restaurant-count></vc:restaurant-count>
+            @RenderSection("footer", required: false)
+            <p>
+                &copy; 2021 - OdeToFood - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            </p>
         </div>
     </footer>
 
