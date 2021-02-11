@@ -16,7 +16,7 @@ namespace OdeToFood.Data
 
         public Restaurant Add(Restaurant newRestaurant)
         {
-            db.Restaurnats.Add(newRestaurant);
+            db.Restaurants.Add(newRestaurant);
             return newRestaurant;
         }
 
@@ -30,24 +30,24 @@ namespace OdeToFood.Data
             var restaurant = GetById(id);
             if(restaurant != null)
             {
-                db.Restaurnats.Remove(restaurant);
+                db.Restaurants.Remove(restaurant);
             }
             return restaurant;
         }
 
         public Restaurant GetById(int id)
         {
-            return db.Restaurnats.Find(id);
+            return db.Restaurants.Find(id);
         }
 
         public int GetCountOfRestaurants()
         {
-            return db.Restaurnats.Count();
+            return db.Restaurants.Count();
         }
 
         public IEnumerable<Restaurant> GetRestaurantsByName(string name)
         {
-            var query = from r in db.Restaurnats
+            var query = from r in db.Restaurants
                         where r.Name.StartsWith(name) || string.IsNullOrEmpty(name)
                         orderby r.Name
                         select r;
@@ -56,7 +56,7 @@ namespace OdeToFood.Data
 
         public Restaurant Update(Restaurant updatedRestaurant)
         {
-            var entity = db.Restaurnats.Attach(updatedRestaurant);
+            var entity = db.Restaurants.Attach(updatedRestaurant);
             entity.State = EntityState.Modified;
             return updatedRestaurant;
         }

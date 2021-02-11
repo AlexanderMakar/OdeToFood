@@ -40,7 +40,7 @@ namespace OdeToFood.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Restaurnats");
+                    b.ToTable("Restaurants");
                 });
 #pragma warning restore 612, 618
         }
